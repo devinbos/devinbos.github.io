@@ -1,0 +1,42 @@
+body{
+    background-color: aliceblue;
+}
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: darkred;
+    color: white;
+    a:link, a:visited {
+        color: white;
+        padding: 15px 25px;
+        text-align: left;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    a:hover, a:active {
+        background-color: grey;
+    }
+}
+header{
+    text-align: center;
+    padding: 3px;
+    background-color: darkred;
+    color: white;
+
+    a:link, a:visited {
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    a:hover, a:active {
+        background-color: grey;
+    }
+}
