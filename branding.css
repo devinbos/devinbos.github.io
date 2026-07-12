@@ -105,3 +105,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+/*changing the theme*/
+:root { --bg: #ffffff; --text: #111111; }
+[data-theme="dark"] { --bg: #1a1a1a; --text: #f0f0f0; }
+body { background-color: var(--bg); color: var(--text); }

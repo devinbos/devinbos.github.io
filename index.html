@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    const savedTheme = localStorage.getItem("theme");
+      if (savedTheme){
+         document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    </script>
     <link rel="stylesheet" href="branding.css">
     <script src = "theme.js"></script>
     <!-- Contains styles for the links for header and footer of the page and styles for the -->
@@ -45,7 +51,7 @@
             <li><a href="projects.html">Products</a></li>
             <li><a href="blog.html">News</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><label class="switch"> <input type="checkbox"> <span class="slider round"></span> Change Theme </label> </li>
+            <li><label class="switch"> <input type="checkbox" id="theme-toggle"> <span class="slider round"></span> Change Theme </label> </li>
      </ul>
     </nav>
 </header>
