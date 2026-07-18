@@ -46,6 +46,7 @@ header{
 }
 .switch {
   position: relative;
+  left: 1500%;
   display: inline-block;
   width: 60px;
   height: 34px;

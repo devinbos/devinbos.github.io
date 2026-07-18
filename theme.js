@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
  const toggleBtn = document.getElementById("theme-toggle");
  function applyTheme(theme) {
  document.body.setAttribute("data-theme", theme);
- //toggleBtn.textContent = theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode";
- toggleBtn.checked = theme === "dark";
+//toggleBtn.textContent = theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode";
+toggleBtn.checked = theme === "dark";
     localStorage.setItem("theme", theme);
  }
  function loadSavedTheme() {
