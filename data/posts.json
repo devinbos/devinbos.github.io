@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Part 1",
+        "date": "2026-07-20",
+        "summary": "A short description of the post.",
+        "category": "Tutorial",
+        "content": "Full post body text goes here."
+    },
+
+    {
+        "id": 2,
+        "title": "Part 3",
+        "date": "2026-07-21",
+        "summary": "A short description of the post.",
+        "category": "Tutorial",
+        "content": "Full post body text goes here."
+    },
+
+    {
+        "id": 3,
+        "title": "Part 4",
+        "date": "2026-07-22",
+        "summary": "A short description of the post.",
+        "category": "Tutorial",
+        "content": "Full post body text goes here."
+    },
+
+    {
+        "id": 4,
+        "title": "Part 5",
+        "date": "2026-07-23",
+        "summary": "A short description of the post.",
+        "category": "Tutorial",
+        "content": "Full post body text goes here."
+    }
+]

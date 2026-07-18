@@ -12,6 +12,7 @@
     </script>
     <link rel="stylesheet" href="branding.css">
     <script src = "theme.js"></script>
+    <script src = blog.js></script>
     <!-- Contains styles for the links for header and footer of the page and styles for the -->
   <style>
     .container {
@@ -31,11 +32,14 @@
 
     li {
         float: left;
-    }
-
-    div{
+     }
+    .newsDisplay{
       display: grid;
-    }
+      grid-template-columns: auto auto auto;
+      gap: 20px;
+      margin: 20px;;
+      }
+
   </style>
   <title>News</title>
 </head>
@@ -55,21 +59,15 @@
      </ul>
     </nav>
 </header>
-<h1 style="font-size: 45px;">About Us</h1>
-<h2>News</h2>
+<h1 style="font-size: 45px;">News</h1>
+<section id = "blog-list" class="newsDisplay">
+</section>
 
-<div>
-<h3>Jane Doe</h3>  
-<p>Jane Doe is our founder and CEO. She graduated from York University with a Computer Science degree.<br>
-She has since worked at many software companies with a focus on user experience which inspired her
-<br>to create Testy Testers. </p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rJrZdKJZV7l-AiJaW34MWyJyMA82OmF9De8bv491q09wB2i6zrgSAA4&s=10" alt="A business woman in a black suit" height="200" width="180">
-</div>
 <footer>
     <p>&copy; 2026 Testy Tester</p>
-  <nav class="menu">
-  <!-- Table of Contents-->
-  <ul>
+    <nav class="menu">
+    <!-- Table of Contents-->
+    <ul>
     <li><a href="index.html">Home</a></li>
     <li class="active"><a href="about.html">About</a></li>
     <li><a href="services.html">Services</a></li>
@@ -78,7 +76,6 @@ She has since worked at many software companies with a focus on user experience 
     <li><a href="contact.html">Contact</a></li>
   </ul>
   </nav>
-</footer>
-</body>
-
+  </footer>
+  </body>
  </html>
