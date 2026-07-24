@@ -1,6 +1,6 @@
 body{
     background-color: aliceblue;
-}
+  }
 footer{
     position: fixed;
     left: 0;
@@ -30,7 +30,7 @@ header{
     background-color: darkred;
     color: white;
 
-    a:link, a:visited {
+      a:link, a:visited {
         color: white;
         padding: 15px 25px;
         text-align: center;
@@ -38,11 +38,11 @@ header{
         display: flex;
         flex-direction: row;
 
-    }
+        }
 
-    a:hover, a:active {
+        a:hover, a:active {
         background-color: grey;
-    }
+        }
 }
 .switch {
   position: relative;

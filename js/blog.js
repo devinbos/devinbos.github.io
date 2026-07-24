@@ -30,16 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                 this.textContent='Read Less'}else{content.style.display='none'; this.textContent='Read More'}">
                                 Read More
                                 </button>`;
-          
-        
-        // TODO: Populate postElement with the post data
-        // Suggested structure:
-        // <h2> for post.title
-        // <p class="post-meta"> for post.date and post.category
-        // <p> for post.summary
-        // A "Read More" button or link (can toggle full content visibility)
-        blogList.appendChild(postElement);
-        });
-        })
-      .catch(error => console.error("Error loading posts:", error));
+                                blogList.appendChild(postElement);
+            });
+          })
+          .catch(error => console.error("Error loading posts:", error));
 });
