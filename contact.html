@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="branding.css">
     <script src = "js/theme.js"></script>
     <script src= "js/components.js"></script>
-    <!-- Contains styles for the links for header and footer of the page and styles for the -->
+    <script src= "js/validate.js"></script>
   <style>
-    .container {
-        display: flex;
-        flex-direction: column;
+    .container contact-form{
+        display: grid;
         margin: 10px;
         padding: 20px;
         font-size: 30px;
@@ -33,8 +32,6 @@
     li {
         float: left;
       }
-
-
   </style>
   <title>Contact</title>
 </head>
@@ -43,19 +40,50 @@
 
 <h1 style="font-size: 45px;">Contact Us</h1>
 
+<!-- <main id="contact-form"> -->
 <main>
-<h3>Contact Form</h3>  
-<label for="name">Name: </label>
-<input type="text" id="name" name="name" placeholder="Your name...">
-<label for="email">Email Address: </label>
-<input type="text" id="email" name="email" placeholder="Your email...">
-<label for="phone">Phone Number: </label>
-<input type="text" id="phone" name="phone" placeholder="Your phone number...">
-<label for="cName">Company Name: </label>
-<input type="text" id="cName" name="cName" placeholder="Your company name...">
+  <form id="contact-form">
+  <h3>Contact Form</h3>  
+    <div>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" placeholder="Your name...">
+      <span class = "error-msg" style="color:red;"></span>
+    </div>
+    <div>
+     <label for="email">Email Address: </label>
+     <input type="text" id="email" name="email" placeholder="Your email...">
+     <span class = "error-msg" style="color:red;"></span>
+    </div>
+    <div>
+      <label for="phone">Phone Number: </label>
+      <input type="text" id="phone" name="phone" placeholder="Your phone number...">
+      <span class = "error-msg" style="color:red;"></span>
+    </div>
+    <div>
+      <label for="cName">Company Name: </label>
+      <input type="text" id="cName" name="cName" placeholder="Your company name...">
+      <span class = "error-msg" style="color:red;"></span>
+    </div>
+    <div>
+      <label for="subject">Subject Line: </label>
+      <input type="text" id="subject" name="subject" placeholder="Subject...">
+      <span class = "error-msg" style="color:red;"></span>
+    </div>
+    <div>
+      <label for="message">Message: </label>
+      <input type="text" id="message" name="message" size="100" placeholder="Your message...">
+      <span class = "error-msg" style="color:red;"></span>
+    </div>
+    <div>
+      <button type="submit" id="submit" name = "submit">Submit Form</button>
+    </div>
+  </form>
 </main>
+<div id="success-msg" style="display:none; font-size:45px;">
+  <p>Contact Form Submitted Successfully!</p>
+</div>
 <div id="footer-placeholder"></div>
 
-  </body>
+</body>
 
  </html>

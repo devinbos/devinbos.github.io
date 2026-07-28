@@ -1,24 +1,53 @@
 document.addEventListener("DOMContentLoaded", function () {
  const form = document.getElementById("contact-form");
  function showError(fieldId, message) {
- const field = document.getElementById(fieldId);
+   const field = document.getElementById(fieldId);
+   const error = field.nextElementSibling;
+   error.textContent = message;
+   error.style.display = "block";
     // TODO: Find or create an error element next to the field
     // TODO: Set its text to message and make it visible
     // Hint: use field.nextElementSibling or a dedicated <span class="error-msg">
  }
  function clearError(fieldId) {
-    // TODO: Hide or clear the error message for this field
+   const field = document.getElementById(fieldId);
+   const error = field.nextElementSibling;
+   error.style.display = "none";
  }
  function validateEmail(email) {
+   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     // TODO: Return true if email matches a valid format, false otherwise
     // Hint: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
  }
  form.addEventListener("submit", function (e) {
+   console.log("Hello World");
     e.preventDefault();
     let isValid = true;
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
+    if (name === ""){
+      showError("name", "Please input your name");
+      isValid = false;
+    }
+    if (email === ""){
+      showError("email", "Please input your email");
+      isValid = false;
+    }
+    if (!validateEmail(email)){
+      showError("email", "Please enter a vaild email address format");
+      isValid = false;
+    }
+    if(message.length < 20){
+      showError("message", "Message length must be above 20");
+      isValid = false;
+    }
+    if (isValid === true){
+      form.style.display = "none";
+      const success = document.getElementById("success-msg");
+      success.style.display = "block";
+    }
+    console.log(isValid);
     // TODO: Validate name — show error if empty
     // TODO: Validate email — show error if empty or invalid format
     // TODO: Validate message — show error if fewer than 20 characters
@@ -26,8 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
  });
  // Bonus: clear errors as the user types
  ["name", "email", "message"].forEach(function (id) {
- document.getElementById(id).addEventListener("input", function () {
- clearError(id);
-    });
+   document.getElementById(id).addEventListener("input", function () {
+      clearError(id);
+   });
  });
 });
