@@ -2,10 +2,10 @@
     {
         "id": 1,
         "title": "Part 1",
-        "date": "2026-07-20",
-        "summary": "A short description of the post.",
-        "category": "Tutorial",
-        "content": "Full post body text goes here."
+        "date": "2026-07-30",
+        "summary": "A short explination of my experiences implementing Part 1",
+        "category": "Part 1",
+        "content": "Part 1 features a theme switcher (light mode to dark mode and vice versa), that has a persistent preference. This means that the theme must stay what it was left when the page is reloaded. I approached this part by creating the switch that when clicked on would trigger the theme switch. I then completed the JavaScript provided by the assignment to provide a function to the switch. I put the switch in the header part of the webpage as I felt as though that would make it clear for a user to find and access. A difficulty that I encountered with this part was placing the words “Theme Switch” next to the switch, however after trial and error I was able to have the switch and words close together, making it clear to the user what the switch does."
     },
 
     {
