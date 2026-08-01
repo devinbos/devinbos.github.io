@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
           day: 'numeric'
           });
           let latestPost = "";
-          if (index === 0){lastestPost = "(Lastest Post)";}
-          else{lastestPost="";}
-        postElement.innerHTML = `<h2>${post.title} ${lastestPost}</h2> 
+          if (index === 0){latestPost = "(Latest Post)";}
+          else{latestPost="";}
+        postElement.innerHTML = `<div class="project-card"> <h2 class="card-title">${post.title} ${latestPost}</h2> 
                                 <p class = "post-meta">${stringDate}</p> 
-                                <p class = "post-meta">${post.category}</p>
-                                <p>${post.summery}
+                                <p class = "card-category">${post.category}</p>
+                                <p>${post.summary}
                                 <p id="hidden-${post.id}" style="display:none;">${post.content} </p>
                                 <button onclick="
                                 const content = document.getElementById('hidden-${post.id}');
@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                 content.style.display='block';
                                 this.textContent='Read Less'}else{content.style.display='none'; this.textContent='Read More'}">
                                 Read More
-                                </button>`;
+                                </button>
+                                </div>`;
                                 blogList.appendChild(postElement);
             });
           })

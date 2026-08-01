@@ -3,7 +3,7 @@ function initializeThemeToggle() {
   if (!toggleBtn) return;
  
   function applyTheme(theme) {
-    document.body.setAttribute("data-theme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
     toggleBtn.checked = theme === "dark";
     localStorage.setItem("theme", theme);
   }
@@ -11,11 +11,11 @@ function initializeThemeToggle() {
   const savedTheme = localStorage.getItem("theme") || "light";
   applyTheme(savedTheme);
  
-  toggleBtn.addEventListener("change", function() {
+  toggleBtn.addEventListener("change", () => {
     applyTheme(toggleBtn.checked ? "dark" : "light");
   });
 }
-// function initializeThemeToggle() {
+
 // document.addEventListener("DOMContentLoaded", function () {
 //  const toggleBtn = document.getElementById("theme-toggle");
 //  function applyTheme(theme) {
@@ -39,4 +39,4 @@ function initializeThemeToggle() {
 //  });
 //  loadSavedTheme(); 
 // });
-// }
+

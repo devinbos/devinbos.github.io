@@ -14,8 +14,9 @@
     <script src = "js/theme.js"></script>
     <script src = "js/blog.js"></script>
     <script src= "js/components.js"></script>
+    <script src= "js/filter.js"></script>
 
-    <!-- Contains styles for the links for header and footer of the page and styles for the news display-->
+    <!-- Contains styles for the header and footer of the page and styles for the other content on the page-->
   <style>
     .container {
         display: flex;
@@ -49,8 +50,10 @@
 <div id="header-placeholder"></div>
 
 <h1 style="font-size: 45px;">News</h1>
+<input type="text" id="filter-input" placeholder="Search...">
 <section id = "blog-list" class="newsDisplay">
 </section>
+<h3 id = "no-results" style="display:none;">Sorry, no result can be found for your search</h3>
 
 <div id="footer-placeholder"></div>
 

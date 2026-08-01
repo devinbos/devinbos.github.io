@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="branding.css">
     <script src = "js/theme.js"></script>
     <script src= "js/components.js"></script>
+    <script src="js/filter.js"></script>
     <!-- Contains styles for the header and footer of the page and styles for the other content on the page-->
   <style>
     .container {
@@ -40,8 +41,10 @@
         text-align: center;
       }
       .share{
+        display: flex;
         justify-content: center;
       }
+
   </style>
   <title>Products</title>
 </head>
@@ -49,35 +52,61 @@
 <div id="header-placeholder"></div>
 
 <h1 style="font-size: 45px;">Product News</h1>
+
+<input type="text" id="filter-input" placeholder="Search...">
 <main>
-    <div style="outline: 2px solid black;">
-        <h3> 123 Gaming uses Tester Testy services</h3>
+    <div class="project-card" style="outline: 2px solid black;">
+        <h3 class="card-title"> 123 Gaming uses Tester Testy services</h3>
+        <p class = "card-category">Contract Award</p>
         <img src = "imgs/handshake.jpg" alt="A man and a woman in suits shaking hands" width ="280">
         <p> 123 Gamming has procured Testy Tester's services for an upcoming project. As part of the $400,000 deal Tester Testy will test their game, website, and do testing on their marketing campaign before the launch of 123 Gamming's next project.</p>
-        <p>Share:</p>
-        <ul>
+        <ul class="share">
+            <li>Share:</li>
             <li><a href="https://www.instagram.com/"><img src="imgs/insta.jpg" alt="Instagram's logo" width="20"></a></li>
+            <li><a href="https://www.linkedin.com/jobs?mcid=7277059066705674243&src=go-pa&trk=sem-ga_campid.22039272405_asid.173116851835_crid.732549151388_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9000945&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=22039272405&gbraid=0AAAAABIeiSrTZZsZ0O4A2KjLPsmq2TpG5&gclid=CjwKCAjwsrbTBhAvEiwA0Bpp4UXH7l5zqWh8OBYyoG4zJs2WQT7D_5QvLrx2-Rl0J60vcHFK4aQO4xoC0hcQAvD_BwE"><img src="imgs/linkedin.png" alt="LinkedIn's logo" width="30"></a></li>            
         </ul>
     </div>
-    <div style="outline: 2px solid black;">
-        <h3> Testy Tester wins award for best testing products</h3>
+    <div class="project-card" style="outline: 2px solid black;">
+        <h3 class="card-title"> Testy Tester wins award for best testing products</h3>
+        <p class = "card-category">Award Show</p>        
         <img src = "imgs/award.jpg" alt="A gold trophy against a blue background" width ="280">
         <p> Testy Tester has won an award for "Best Testers" in North America!</p>
         <p>Share:</p>
         <ul class="share">
+            <li>Share:</li>            
             <li><a href="https://www.instagram.com/"><img src="imgs/insta.jpg" alt="Instagram's logo" width="20"></a></li>
+            <li><a href="https://www.linkedin.com/jobs?mcid=7277059066705674243&src=go-pa&trk=sem-ga_campid.22039272405_asid.173116851835_crid.732549151388_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9000945&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=22039272405&gbraid=0AAAAABIeiSrTZZsZ0O4A2KjLPsmq2TpG5&gclid=CjwKCAjwsrbTBhAvEiwA0Bpp4UXH7l5zqWh8OBYyoG4zJs2WQT7D_5QvLrx2-Rl0J60vcHFK4aQO4xoC0hcQAvD_BwE"><img src="imgs/linkedin.png" alt="LinkedIn's logo" width="30"></a></li>            
+
         </ul>
     </div>
-    <div style="outline: 2px solid black;">
-
-
+    <div class="project-card" style="outline: 2px solid black;">
+        <h3 class="card-title"> Testy Tester wins award for best testing products</h3>
+        <p class = "card-category">Award Show</p>        
+        <img src = "imgs/award.jpg" alt="A gold trophy against a blue background" width ="280">
+        <p> Testy Tester has won an award for "Best Testers" in North America!</p>
+        <p>Share:</p>
+        <ul class="share">
+            <li>Share:</li>            
+            <li><a href="https://www.instagram.com/"><img src="imgs/insta.jpg" alt="Instagram's logo" width="20"></a></li>
+            <li><a href="https://www.linkedin.com/jobs?mcid=7277059066705674243&src=go-pa&trk=sem-ga_campid.22039272405_asid.173116851835_crid.732549151388_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9000945&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=22039272405&gbraid=0AAAAABIeiSrTZZsZ0O4A2KjLPsmq2TpG5&gclid=CjwKCAjwsrbTBhAvEiwA0Bpp4UXH7l5zqWh8OBYyoG4zJs2WQT7D_5QvLrx2-Rl0J60vcHFK4aQO4xoC0hcQAvD_BwE"><img src="imgs/linkedin.png" alt="LinkedIn's logo" width="30"></a></li>            
+        </ul>
     </div>
-    <div style="outline: 2px solid black;">
-
-
+    <div class="project-card" style="outline: 2px solid black;">
+<h3 class="card-title"> Testy Tester wins award for best testing products</h3>
+        <p class = "card-category">Award Show</p>        
+        <img src = "imgs/award.jpg" alt="A gold trophy against a blue background" width ="280">
+        <p> Testy Tester has won an award for "Best Testers" in North America!</p>
+        <p>Share:</p>
+        <ul class="share">
+            <li>Share:</li>            
+            <li><a href="https://www.instagram.com/"><img src="imgs/insta.jpg" alt="Instagram's logo" width="20"></a></li>
+            <li><a href="https://www.linkedin.com/jobs?mcid=7277059066705674243&src=go-pa&trk=sem-ga_campid.22039272405_asid.173116851835_crid.732549151388_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9000945&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=22039272405&gbraid=0AAAAABIeiSrTZZsZ0O4A2KjLPsmq2TpG5&gclid=CjwKCAjwsrbTBhAvEiwA0Bpp4UXH7l5zqWh8OBYyoG4zJs2WQT7D_5QvLrx2-Rl0J60vcHFK4aQO4xoC0hcQAvD_BwE"><img src="imgs/linkedin.png" alt="LinkedIn's logo" width="30"></a></li>            
+        </ul>
     </div>
-
 </main>
-<div id="footer-placeholder"></div>
+    <h3 id = "no-results" style="display:none;">Sorry, no result can be found for your search</h3>
+    <div id="footer-placeholder"></div>
+
+
 </body>
 </html>
