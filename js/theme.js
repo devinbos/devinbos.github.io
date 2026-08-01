@@ -11,11 +11,11 @@ function initializeThemeToggle() {
   const savedTheme = localStorage.getItem("theme") || "light";
   applyTheme(savedTheme);
  
-  toggleBtn.addEventListener("change", () => {
+  toggleBtn.addEventListener("change", function() {
     applyTheme(toggleBtn.checked ? "dark" : "light");
   });
 }
-
+// function initializeThemeToggle() {
 // document.addEventListener("DOMContentLoaded", function () {
 //  const toggleBtn = document.getElementById("theme-toggle");
 //  function applyTheme(theme) {
@@ -39,3 +39,4 @@ function initializeThemeToggle() {
 //  });
 //  loadSavedTheme(); 
 // });
+// }

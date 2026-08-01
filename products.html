@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="branding.css">
     <script src = "js/theme.js"></script>
     <script src= "js/components.js"></script>
-    <!-- Contains styles for the links for header and footer of the page and styles for the -->
+    <!-- Contains styles for the header and footer of the page and styles for the other content on the page-->
   <style>
     .container {
         display: flex;
@@ -33,16 +33,51 @@
     li {
         float: left;
       }
-
-
+    
+      main{
+        display: grid;
+        column-count: 4;
+        text-align: center;
+      }
+      .share{
+        justify-content: center;
+      }
   </style>
   <title>Products</title>
 </head>
 <body>
 <div id="header-placeholder"></div>
-<h1 style="font-size: 45px;">About Us</h1>
-<h2>Products</h2>
 
+<h1 style="font-size: 45px;">Product News</h1>
+<main>
+    <div style="outline: 2px solid black;">
+        <h3> 123 Gaming uses Tester Testy services</h3>
+        <img src = "imgs/handshake.jpg" alt="A man and a woman in suits shaking hands" width ="280">
+        <p> 123 Gamming has procured Testy Tester's services for an upcoming project. As part of the $400,000 deal Tester Testy will test their game, website, and do testing on their marketing campaign before the launch of 123 Gamming's next project.</p>
+        <p>Share:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/"><img src="imgs/insta.jpg" alt="Instagram's logo" width="20"></a></li>
+        </ul>
+    </div>
+    <div style="outline: 2px solid black;">
+        <h3> Testy Tester wins award for best testing products</h3>
+        <img src = "imgs/award.jpg" alt="A gold trophy against a blue background" width ="280">
+        <p> Testy Tester has won an award for "Best Testers" in North America!</p>
+        <p>Share:</p>
+        <ul class="share">
+            <li><a href="https://www.instagram.com/"><img src="imgs/insta.jpg" alt="Instagram's logo" width="20"></a></li>
+        </ul>
+    </div>
+    <div style="outline: 2px solid black;">
+
+
+    </div>
+    <div style="outline: 2px solid black;">
+
+
+    </div>
+
+</main>
 <div id="footer-placeholder"></div>
 </body>
 </html>

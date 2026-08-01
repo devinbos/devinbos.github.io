@@ -33,9 +33,10 @@
     li {
         float: left;
     }
-
-    .content{
-      column-count: 3;
+    main{
+      display: grid;
+      column-count: 4;
+      text-align: center;
     }
   </style>
   <title>Services</title>
@@ -44,22 +45,28 @@
 <div id="header-placeholder"></div>
 
 <h1 style="font-size: 45px;">Services</h1>
-
-<div class="content">
-  <h3>Game Testing</h3>
-  <h3>Website Testing</h3>
-  <h3>SaaS Testing</h3>
-</div>
-<div class="content">
-    <p>Our world class testers will play our game to find bugs, glitches, broken parts, <br>unclear and difficult parts of the game.</p>
-    <p>We will test your website to find any issues with the user experience. We will categorize them for you and provide constructive criticism.</p>
-    <p>We will extensively test the SaaS options that you either provide or are looking to procure.</p>
-</div>
-<div class="content">
-    <img src="https://blog.nashtechglobal.com/wp-content/uploads/2024/11/game-feature.png" alt="A computer drawing of a man at a desk with a computer" height="350" width="280">
-    <img src="webtesting.png" alt="A computer drawing of a magnifying glass being held up to a moinitor with bugs on it" height="350" width="280">
-    <img src="SaaStesting.png" alt="A computer drawing of a concept of a SaaS system" height="350" width="280">
-</div>
+<main>
+  <div>
+    <h3>Game Testing</h3>
+    <img src="imgs/gameFeature.png" alt="A computer drawing of a man at a desk with a computer" width="280">
+    <p>Our world class testers will play your game to find bugs, glitches, broken parts, unclear and difficult parts of your game.</p>
+  </div>
+  <div>
+      <h3>Website Testing</h3>
+      <img src="imgs/webtesting.png" alt="A computer drawing of a magnifying glass being held up to a moinitor with bugs on it" width="280">
+      <p>We will test your website to find any issues with the user experience. We will categorize them for you and provide constructive criticism.</p>
+  </div>
+  <div>
+      <h3>SaaS Testing</h3>
+      <img src="imgs/SaaStesting.png" alt="A computer drawing of a concept of a SaaS system" width="280">
+      <p>We will extensively test the SaaS options that you either provide or are looking to procure.</p>
+  </div>
+  <div>
+      <h3>Marketing Campagin Testing</h3>
+      <img src="imgs/marketing.jpg" alt="A man holding a tablet, with symbols denoting his opinion on whatever is on the tablet" width="280">
+      <p>Testy Tester will providing testing for your marketing campaign before the launch of you project and campaign.</p>
+  </div>
+</main>
 <div id="footer-placeholder"></div>
 
 </body>

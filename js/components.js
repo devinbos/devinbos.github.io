@@ -11,12 +11,6 @@ function loadComponent(selector, filePath) {
     .catch(error => console.error(error));
 }
 document.addEventListener("DOMContentLoaded", function () {
- loadComponent("#header-placeholder", "components/header.html");
- loadComponent("#footer-placeholder", "components/footer.html");
+    loadComponent("#header-placeholder", "components/header.html");
+    loadComponent("#footer-placeholder", "components/footer.html");
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     Promise.all([
-//      loadComponent("#header-placeholder", "components/header.html"),
-//      loadComponent("#footer-placeholder", "components/footer.html")]).then(() => {initializeThemeToggle();});
-//     });
