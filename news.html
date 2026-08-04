@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- About Section-->
 <html lang = "en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
@@ -17,45 +17,49 @@
     <script src= "js/filter.js"></script>
 
     <!-- Contains styles for the header and footer of the page and styles for the other content on the page-->
-  <style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 20px;
-        font-size: 30px;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    li {
-        float: left;
-     }
-    .newsDisplay{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin: 20px;;
+    <style>
+      .container {
+          display: flex;
+          flex-direction: column;
+          margin: 10px;
+          padding: 20px;
+          font-size: 30px;
       }
 
-  </style>
-  <title>News</title>
-</head>
-<body>
-<div id="header-placeholder"></div>
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
 
-<h1 style="font-size: 45px;">News</h1>
-<input type="text" id="filter-input" placeholder="Search...">
-<section id = "blog-list" class="newsDisplay">
-</section>
-<h3 id = "no-results" style="display:none;">Sorry, no result can be found for your search</h3>
+      li {
+          float: left;
+       }
+      .newsDisplay{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+       gap: 20px;
+       margin: 20px;;
+       }
 
-<div id="footer-placeholder"></div>
+    </style>
+    <title>News</title>
+  </head>
+  <body>
+    <!--Header Placeholder-->
+    <div id="header-placeholder"></div>
+
+    <h1 style="font-size: 45px;">News</h1>
+    <!--Search Bar implementation-->
+    <input type="text" id="filter-input" placeholder="Search...">
+    <section id = "blog-list" class="newsDisplay">
+    </section>
+    <!--Displays if no results apply to the user's search-->
+    <h3 id = "no-results" style="display:none;">Sorry, no result can be found for your search</h3>
+    
+    <!--Footer Placeholder-->
+    <div id="footer-placeholder"></div>
 
   </body>
- </html>
+</html>

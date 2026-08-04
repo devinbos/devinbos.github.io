@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("data/posts.json")
     .then(response => response.json())
     .then(posts => {
+      //Sorts by date 
       posts.sort((a, b) => new Date(b.date) - new Date(a.date));
       posts.forEach((post,index) => {
         const postElement = document.createElement("div");

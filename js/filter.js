@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const filterInput = document.getElementById("filter-input");
     const noResults = document.getElementById("no-results");
-
+    //When the user types anything into the search bar this checks the input against the titles and categories of the different cards in "News" and "Products"
     filterInput.addEventListener("input", function () {
         const cards = document.querySelectorAll(".project-card");
          const query = this.value.toLowerCase().trim();

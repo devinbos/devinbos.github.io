@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <!-- About Section-->
 <html lang = "en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-    const savedTheme = localStorage.getItem("theme");
-      if (savedTheme){
-         document.documentElement.setAttribute("data-theme", savedTheme);
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script>
+      const savedTheme = localStorage.getItem("theme");
+        if (savedTheme){
+           document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      </script>
+      <link rel="stylesheet" href="branding.css">
+      <script src = "js/theme.js"></script>
+      <script src= "js/components.js"></script>
+      <!-- Contains styles for the header and footer of the page and styles for the other content on the page-->
+    <style>
+     .container {
+         display: flex;
+         flex-direction: column;
+         margin: 10px;
+         padding: 20px;
+         font-size: 30px;
       }
-    </script>
-    <link rel="stylesheet" href="branding.css">
-    <script src = "js/theme.js"></script>
-    <script src= "js/components.js"></script>
-    <!-- Contains styles for the header and footer of the page and styles for the other content on the page-->
-  <style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 20px;
+
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+
+      li {
+          float: left;
+      }
+
+     main{
+        column-count: 2;
         font-size: 30px;
-    }
+     }
+   </style>
+   <title>Home</title>
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
+    <!--Company name and tag line-->
+    <h1 style="font-size: 45px;">Testy Tester</h1>
+    <p><i>Where you can recive peace of mind about testing</i></p>
+    <main>
+    <!-- Intro-->
+    <p>Testy Tester is a company who's mission is to provide high quality testing of software such as video games, launch marketing, webistes, and SaaS. </p>
+    <img src="imgs/software-testing.jpg" alt="The words Software Testing with icons around it and a person performing the testing">
+    </main>
+    <!--Footer Placeholder-->
+    <div id="footer-placeholder"></div>
 
-    li {
-        float: left;
-    }
+  </body>
 
-    main{
-      column-count: 2;
-      font-size: 30px;
-    }
-  </style>
-  <title>Home</title>
-</head>
-<body>
-<div id="header-placeholder"></div>
-
-<h1 style="font-size: 45px;">Testy Tester</h1>
-<p>Where you can recive peace of mind about testing</p>
-<main>
-<!-- overview-->
-<p>Testy Tester is a company who's mission is to provide high quality testing of software such as video games, webistes, and SaaS. </p>
-<img src="https://thumbs.dreamstime.com/b/software-testing-internet-business-technology-concept-143071525.jpg">
-</main>
-<div id="footer-placeholder"></div>
-
-</body>
-
- </html>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- About Section-->
 <html lang = "en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
@@ -15,75 +15,89 @@
     <script src= "js/components.js"></script>
     <script src= "js/validate.js"></script>
     <!-- Contains styles for the header and footer of the page and styles for the other content on the page-->
-  <style>
-    .container contact-form{
-        display: grid;
-        margin: 10px;
-        padding: 20px;
-        font-size: 30px;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    li {
-        float: left;
+    <style>
+      .container contact-form{
+          display: grid;
+          margin: 10px;
+          padding: 20px;
+          font-size: 30px;
       }
-  </style>
-  <title>Contact</title>
-</head>
-<body>
-<div id="header-placeholder"></div>
 
-<h1 style="font-size: 45px;">Contact Us</h1>
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
 
-<main>
-  <form id="contact-form">
-  <h3>Contact Form</h3>  
-    <div>
-      <label for="name">Name: </label>
-      <input type="text" id="name" name="name" placeholder="Your name...">
-      <span class = "error-msg" style="color:red;"></span>
-    </div>
-    <div>
-     <label for="email">Email Address: </label>
-     <input type="text" id="email" name="email" placeholder="Your email...">
-     <span class = "error-msg" style="color:red;"></span>
-    </div>
-    <div>
-      <label for="phone">Phone Number: </label>
-      <input type="text" id="phone" name="phone" placeholder="Your phone number...">
-      <span class = "error-msg" style="color:red;"></span>
-    </div>
-    <div>
-      <label for="cName">Company Name: </label>
-      <input type="text" id="cName" name="cName" placeholder="Your company name...">
-      <span class = "error-msg" style="color:red;"></span>
-    </div>
-    <div>
-      <label for="subject">Subject Line: </label>
-      <input type="text" id="subject" name="subject" placeholder="Subject...">
-      <span class = "error-msg" style="color:red;"></span>
-    </div>
-    <div>
-      <label for="message">Message: </label>
-      <input type="text" id="message" name="message" size="100" placeholder="Your message...">
-      <span class = "error-msg" style="color:red;"></span>
-    </div>
-    <div>
-      <button type="submit" id="submit" name = "submit">Submit Form</button>
-    </div>
-  </form>
-</main>
-<div id="success-msg" style="display:none; font-size:45px;">
-  <p>Contact Form Submitted Successfully!</p>
-</div>
-<div id="footer-placeholder"></div>
+     li {
+         float: left;
+        }
 
-</body>
+    </style>
+    <title>Contact</title>
+  </head>
+  <body>
+    <!--Header Placeholder-->
+    <div id="header-placeholder"></div>
 
- </html>
+    <h1 style="font-size: 45px;">Contact Us</h1>
+    <div style="position: relative;">
+      <h3> Social Media Links:</h3>
+      <ul>
+          <li><a href="https://github.com/devinbos/devinbos.github.io"><img src="imgs/github.png" alt="GitHub's logo" width="20"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="imgs/insta.jpg" alt="Instagram's logo" width="20"></a></li>
+         <li><a href="https://www.linkedin.com/jobs?mcid=7277059066705674243&src=go-pa&trk=sem-ga_campid.22039272405_asid.173116851835_crid.732549151388_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9000945&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=22039272405&gbraid=0AAAAABIeiSrTZZsZ0O4A2KjLPsmq2TpG5&gclid=CjwKCAjwsrbTBhAvEiwA0Bpp4UXH7l5zqWh8OBYyoG4zJs2WQT7D_5QvLrx2-Rl0J60vcHFK4aQO4xoC0hcQAvD_BwE"><img src="imgs/linkedin.png" alt="LinkedIn's logo" width="30"></a></li>            
+         <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><img src="imgs/facebook.png" alt="Facebook's logo" width="20"></a></li>
+          <li><a href="https://x.com/"><img src="imgs/x.png" alt="X's logo" width="20"></a></li>
+          <li><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgmail%2Bsign%2Bin%26oq%3Dgmail%2Bsign%2Bin%26gs_lcrp%3DEgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGD3SAQgxNzcyajBqN6gCALACAA%26sourceid%3Dchrome%26source%3Dchrome.ob%26ie%3DUTF-8%26sei%3DIjpyar2JGPHFruEP56m14Qg&dsh=S1912646527%3A1785870885464190&ec=futura_srp_og_si_72236_p&hl=en&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=Ac50bxvvfpl-f5mw7pidVZ6Rt8mQ3eX6esy37JB3UcecypSdC7-pU3YWwaDnI4dSekRODMZ7SeFjfw"><img src="imgs/gmail.png" alt="gmail's logo" width="20"></a></li>
+      <ul>
+    </div>
+    <!--Contact form elements-->
+    <main>
+      <form id="contact-form">
+      <h3>Contact Form</h3>  
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" placeholder="Your name...">
+          <span class = "error-msg" style="color:red;"></span>
+        </div>
+        <div>
+        <label for="email">Email Address: </label>
+        <input type="text" id="email" name="email" placeholder="Your email...">
+        <span class = "error-msg" style="color:red;"></span>
+        </div>
+        <div>
+          <label for="phone">Phone Number: </label>
+          <input type="text" id="phone" name="phone" placeholder="Your phone number...">
+          <span class = "error-msg" style="color:red;"></span>
+        </div>
+        <div>
+          <label for="cName">Company Name: </label>
+          <input type="text" id="cName" name="cName" placeholder="Your company name...">
+          <span class = "error-msg" style="color:red;"></span>
+        </div>
+        <div>
+          <label for="subject">Subject Line: </label>
+          <input type="text" id="subject" name="subject" placeholder="Subject...">
+          <span class = "error-msg" style="color:red;"></span>
+        </div>
+        <div>
+          <label for="message">Message: </label>
+          <input type="text" id="message" name="message" size="100" placeholder="Your message...">
+          <span class = "error-msg" style="color:red;"></span>
+        </div>
+        <div>
+          <button type="submit" id="submit" name = "submit">Submit Form</button>
+        </div>
+      </form>
+    </main>
+    <!--Successful Submission page-->
+    <div id="success-msg" style="display:none; font-size:45px;">
+     <p>Contact Form Submitted Successfully!</p>
+    </div>
+    <!--Footer Placeholder-->
+    <div id="footer-placeholder"></div>
+
+  </body>
+</html>
