@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
           let latestPost = "";
           if (index === 0){latestPost = "(Latest Post)";}
           else{latestPost="";}
-        postElement.innerHTML = `<div class="project-card"> <h2 class="card-title">${post.title} ${latestPost}</h2> 
+          // takes in the JSON file's categories and formats them into html elements
+          postElement.innerHTML = `<div class="project-card"> <h2 class="card-title">${post.title} ${latestPost}</h2> 
                                 <p class = "post-meta">${stringDate}</p> 
                                 <p class = "card-category">${post.category}</p>
                                 <p>${post.summary}
@@ -34,5 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
                                 blogList.appendChild(postElement);
             });
           })
-          .catch(error => console.error("Error loading posts:", error));
+  .catch(error => console.error("Error loading posts:", error));
 });

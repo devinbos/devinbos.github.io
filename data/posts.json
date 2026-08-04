@@ -2,36 +2,36 @@
     {
         "id": 1,
         "title": "Part 1",
-        "date": "2026-07-30",
-        "summary": "A short explination of my experiences implementing Part 1",
+        "date": "2026-07-30T14:30:00-05:00",
+        "summary": "An explination of my experiences implementing Part 1, a Theme Changer",
         "category": "Part 1",
-        "content": "Part 1 features a theme switcher (light mode to dark mode and vice versa), that has a persistent preference. This means that the theme must stay what it was left when the page is reloaded. I approached this part by creating the switch that when clicked on would trigger the theme switch. I then completed the JavaScript provided by the assignment to provide a function to the switch. I put the switch in the header part of the webpage as I felt as though that would make it clear for a user to find and access. A difficulty that I encountered with this part was placing the words “Theme Switch” next to the switch, however after trial and error I was able to have the switch and words close together, making it clear to the user what the switch does."
+        "content": "Part 1 features a theme switcher (light mode to dark mode and vice versa), that has a persistent preference. This means that the theme must stay what it was left when the page is reloaded. I approached this part by creating the switch that when clicked on would trigger the theme switch. I then completed the JavaScript provided by the assignment to provide a function to the switch. However, I had to change it as in Part 2, when I created the dynamic header and footer, one of the parts of the JS provided in that part said to re-run the toggle setup so I changed the JS for Part 1 to put it into a function that I called when I needed to re-run the switch. For the switch I was able to find code for it on W3 schools that I could change for my purposes in this project. I put the switch in the header part of the webpage as I felt as though that would make it clear for a user to find and access. A small challenge I had was ensuring the switch and the text telling the user what the switch does were besides each other as I tried a few different ways that did not work until I realised that there was CSS blocking it from when I created the switch that I needed to remove in order for it to format properly."
     },
 
     {
         "id": 2,
         "title": "Part 3",
-        "date": "2026-08-01",
-        "summary": "A short description of the post.",
-        "category": "Tutorial",
-        "content": "Full post body text goes here."
+        "date": "2026-08-03T14:30:00-05:00",
+        "summary": "An explination of my experiences implementing Part 3, a dynamically loaded News Section",
+        "category": "Part 3",
+        "content": "Part 3 is a dynamically loaded news section which holds my reflections on implementing parts of the JS for this project. I started with implementing the JS provided by the project document and completing it to take in a JSON file, format it, and insert the content into my webpage. Working with a JSON file was completely new to me and as such I needed to figure out how to read the content of a JSON file using a JS file, and then format it to be able to be displayed in HTML and on a webpage. Additionally, I also needed to create a tag for the most recent post which only required a little bit of research to implement. There were a few challenges of properly implementing the formatting of the JSON file being read into the JS file but I was able to work through them and implement this part of the project. Another issue I had was that the date object in JSON uses UTC time but since I am in EST time I had to offset the date, this allowed the webpage to show the proper date for the news posts."
     },
 
     {
         "id": 3,
         "title": "Part 4",
-        "date": "2026-08-02",
-        "summary": "A short description of the post.",
-        "category": "Tutorial",
-        "content": "Full post body text goes here."
+        "date": "2026-08-03T14:30:00-05:00",
+        "summary": "An explination of my experiences implementing Part 4, Contact From validation",
+        "category": "Part 4",
+        "content": "The requirements for Part 4 required me to implement validation for a few fields on a contact form that I had previously created. I completed the JS that was provided, which entailed checking if the condition on the field was fulfilled or not, if it was not it would display an error. This is done by retrieving what the user types into the text box on the webpage and checking if it meets the requirements. Additionally, the error would need to disappear once the user fulfilled the requirements, such as adding a name. Once the user submitted a form it would change the page to a Success Screen. The implementation of this part went smoothly with no challenges, I just needed to do some small research to ensure I was completing the starter code correctly."
     },
 
     {
         "id": 4,
         "title": "Part 5",
-        "date": "2026-08-03",
-        "summary": "A short description of the post.",
-        "category": "Tutorial",
-        "content": "Full post body text goes here."
+        "date": "2026-08-04T14:30:00-05:00",
+        "summary": "An explination of my experiences implementing Part 5, a Search Bar for the News, and Products pages",
+        "category": "Part 5",
+        "content": "Part 5 required me to insert a search bar into the News and Products page. This meant reading the title and description of the objects in both pages and checking if it matches the input the user typed into the search bar. If it matched it had to hide the other objects and only display the searched for object. To complete this I used the provided JS and completed it. There were not many challenges for this part. I had a small embarrassing challenge when testing, the search bar was not functioning, this was caused by a typo of “scr” when linking the JS file to the HTML file. Once I noticed the error it was easy to fix but embarrassing to stress about it not working over a small issue."
     }
 ]

@@ -5,20 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
    const error = field.nextElementSibling;
    error.textContent = message;
    error.style.display = "block";
-    // TODO: Find or create an error element next to the field
-    // TODO: Set its text to message and make it visible
-    // Hint: use field.nextElementSibling or a dedicated <span class="error-msg">
+
  }
  function clearError(fieldId) {
    const field = document.getElementById(fieldId);
    const error = field.nextElementSibling;
    error.style.display = "none";
  }
- function validateEmail(email) {
-   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    // TODO: Return true if email matches a valid format, false otherwise
-    // Hint: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
- }
+ function validateEmail(email) {return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);}
+
  form.addEventListener("submit", function (e) {
    console.log("Hello World");
     e.preventDefault();
@@ -48,12 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
       success.style.display = "block";
     }
     console.log(isValid);
-    // TODO: Validate name — show error if empty
-    // TODO: Validate email — show error if empty or invalid format
-    // TODO: Validate message — show error if fewer than 20 characters
-    // TODO: If isValid is true, show a success message
+
  });
- // Bonus: clear errors as the user types
+ // clears errors as the user types
  ["name", "email", "message"].forEach(function (id) {
    document.getElementById(id).addEventListener("input", function () {
       clearError(id);
